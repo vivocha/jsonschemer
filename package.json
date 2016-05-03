@@ -1,0 +1,32 @@
+{
+  "name": "jsonschemer",
+  "version": "1.0.0",
+  "description": "Automatically guesstimate a JSON Schema from the contents of a MongoDB collection",
+  "main": "lib/index.js",
+  "bin": {
+    "jsonschemer": "./lib/tool.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivocha/jsonschemer.git"
+  },
+  "keywords": [
+    "json",
+    "schema",
+    "mongodb"
+  ],
+  "author": "Federico Pinna <fpinna@vivocha.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vivocha/jsonschemer/issues"
+  },
+  "homepage": "https://github.com/vivocha/jsonschemer#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "lodash": "^4.11.2",
+    "mongodb": "^2.1.18"
+  },
+  "engines": {
+    "node": ">=5.4.0"
+  }
+}
