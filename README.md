@@ -15,6 +15,7 @@ jsonschemer [options] <db connection string> <collection>
 
 Valid options are:
 * `-q`, `--query`, filter the documents to analyze using the specified JSON query.
+* `-l`, `--limit`, limit the number of documents to analyze.
 * `-m`, `--maxEnum`, limit the number of possible *enum* values. When encountering a *string*
 type, the tool assume its possible values are fixed and starts adding each encountered
 value to an *enum* clause in the schema. If more than *maxEnum* different values are found,
@@ -36,6 +37,7 @@ Options can have the following properties:
 connection URI string.
 * `collection`, require, the MongoDB collection to query.
 * `q`, optional, a query to filter the documents in the collection.
+* `limit`, optional, maximum number of documents to analyze.
 * `maxEnum`, optional, default 20, maximum number of items in a schema enum.
 
 
